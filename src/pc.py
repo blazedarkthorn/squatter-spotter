@@ -4,13 +4,11 @@ from kivymd.app import MDApp
 from kivy.clock import Clock
 from kivy.graphics.texture import Texture 
 from kivymd.uix.boxlayout import MDBoxLayout
-from kivy.utils import platform
 
 #Mediapipe imports
 import mediapipe as mp
 
 #Extra utils
-import numpy as np
 from datetime import datetime
 import cv2
 
@@ -18,6 +16,7 @@ class BarbellBuddy(MDApp):
     def build(self):
         #Build app
         self.image = Image()
+        self.image.fit_mode = 'fill'
         layout = MDBoxLayout(orientation = 'vertical')
         layout.add_widget(self.image)
 
@@ -26,7 +25,9 @@ class BarbellBuddy(MDApp):
         self.pose = self.mp_pose.Pose()
 
         self.cap = cv2.VideoCapture(0)
-    
+        #self.cap = cv2.VideoCapture('squattest2.mp4')
+        #self.cap = cv2.VideoCapture('ss2.png')
+
         #Initialize pose variables
         self.t = datetime.now()
         self.leftleg = False
