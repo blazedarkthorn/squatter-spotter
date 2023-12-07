@@ -8,4 +8,4 @@ Pose estimation tracker using mediapipe and opencv in python that determines squ
 </br>No lights = No lift
 
 </br>Red box is to be lined up with combo rack arms to eliminate detecting side spotters.
-![alt text](https://github.com/blazedarkthorn/squatter-spotter/blob/main/image.jpg)
+![alt text](https://github.com/blazedarkthorn/squatter-spotter/blob/main/readmeimage.jpg)
