@@ -12,7 +12,7 @@ import mediapipe as mp
 from datetime import datetime
 import cv2
 
-class BarbellBuddy(MDApp):
+class SquatterSpotter(MDApp):
     def build(self):
         #Build app
         self.image = Image()
@@ -105,4 +105,4 @@ class BarbellBuddy(MDApp):
             cv2.circle(frame, ((int(frame.shape[0]*.15),int(frame.shape[1]*.1))), int(frame.shape[0]*.02), (255,255,255),-1)
             cv2.circle(frame, ((int(frame.shape[0]*.2),int(frame.shape[1]*.1))), int(frame.shape[0]*.02), (255,255,255),-1)        
 if __name__ == '__main__':
-    BarbellBuddy().run()
+    SquatterSpotter().run()
