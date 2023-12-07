@@ -25,9 +25,6 @@ class BarbellBuddy(MDApp):
         self.pose = self.mp_pose.Pose()
 
         self.cap = cv2.VideoCapture(0)
-        #self.cap = cv2.VideoCapture('squattest2.mp4')
-        #self.cap = cv2.VideoCapture('ss2.png')
-
         #Initialize pose variables
         self.t = datetime.now()
         self.leftleg = False
